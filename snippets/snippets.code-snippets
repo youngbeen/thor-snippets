@@ -73,6 +73,32 @@
       "}"
     ]
   },
+  "Thor - Filters - Local Options Cascader": {
+    "scope": "javascript,typescript",
+    "prefix": "thor-filters-cascaderlocal",
+    "body": [
+      "{",
+      "\tlabel: '$1',",
+      "\tparameter: '$2',",
+      "\ttype: 'cascader',",
+      "\toptions: [$3]",
+      "}"
+    ]
+  },
+  "Thor - Filters - Lazy Options Cascader": {
+    "scope": "javascript,typescript",
+    "prefix": "thor-filters-cascaderlazy",
+    "body": [
+      "{",
+      "\tlabel: '$1',",
+      "\tparameter: '$2',",
+      "\ttype: 'cascader',",
+      "\tlazyOptions: (node, resolve) => {",
+      "\t\t${3:resolve([])}",
+      "\t}",
+      "}"
+    ]
+  },
   "Thor - Actions - Router Action": {
     "scope": "javascript,typescript",
     "prefix": "thor-actions-router",
@@ -166,6 +192,18 @@
       "}"
     ]
   },
+  "Thor - Fields - Cascader": {
+    "scope": "javascript,typescript",
+    "prefix": "thor-fields-cascader",
+    "body": [
+      "{",
+      "\tlabel: '$1',",
+      "\tparameter: '$2',",
+      "\ttype: 'cascader',",
+      "\toptions: [$3]",
+      "}"
+    ]
+  },
   "Thor - Fields - With Handlers": {
     "scope": "javascript,typescript",
     "prefix": "thor-fields-handlers",
@@ -193,11 +231,24 @@
   },
   "Thor - Select Options": {
     "scope": "javascript,typescript",
-    "prefix": "thor-options",
+    "prefix": "thor-options-select",
     "body": [
       "{",
       "\tlabel: '$1',",
       "\tvalue: '$2'",
+      "}"
+    ]
+  },
+  "Thor - Cascader Options": {
+    "scope": "javascript,typescript",
+    "prefix": "thor-options-cascader",
+    "body": [
+      "{",
+      "\tlabel: '$1',",
+      "\tvalue: '$2',",
+      "\tleaf: ${3:false},",
+      "\tchildren: [$4],",
+      "\t${5:disabled: false}",
       "}"
     ]
   }
