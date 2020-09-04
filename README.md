@@ -1,6 +1,6 @@
 # thor-snippets
 
-This is a vscode snippets plugin for [**Thor**](https://github.com/youngbeen/thor).
+A vscode snippets plugin for **Thor**.
 
 ## Features
 
@@ -27,7 +27,14 @@ n/a
 
 ## Release Notes
 
-Now as Thor support `cascader` in filters and fields, this plugin is compatible with Thor `cascader`
+Thor brings a lot of new features in latest release(e.g. tree table, image/tag type table field, batch table actions), this plugin now supports snippets to these new features as well.
+
+### 0.3.0 (2020-09-04)
+
+1. `Thor - Page Object` supports api params config, tree table config
+2. add `Thor - Actions - BatchActions` support
+3. add `Thor - TableFields - Image`
+4. add `Thor - TableFields - Tag`
 
 ### 0.2.0 (2020-08-07)
 
