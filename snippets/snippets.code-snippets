@@ -245,6 +245,18 @@
       "}"
     ]
   },
+  "Thor - Fields - Radio": {
+    "scope": "javascript,typescript",
+    "prefix": "thor-fields-radio",
+    "body": [
+      "{",
+      "\tlabel: '$1',",
+      "\tparameter: '$2',",
+      "\ttype: 'radio',",
+      "\toptions: [$3]",
+      "}"
+    ]
+  },
   "Thor - Fields - Cascader": {
     "scope": "javascript,typescript",
     "prefix": "thor-fields-cascader",
@@ -254,6 +266,21 @@
       "\tparameter: '$2',",
       "\ttype: 'cascader',",
       "\toptions: [$3]",
+      "}"
+    ]
+  },
+  "Thor - Fields - Switch": {
+    "scope": "javascript,typescript",
+    "prefix": "thor-fields-switch",
+    "body": [
+      "{",
+      "\tlabel: '$1',",
+      "\tparameter: '$2',",
+      "\ttype: 'switch',",
+      "\toptions: [",
+      "\t\t{ label: '$3', value: ${4:false} },",
+      "\t\t{ label: '${5:开启}', value: ${6:true} }",
+      "\t]",
       "}"
     ]
   },

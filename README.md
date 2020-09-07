@@ -27,7 +27,12 @@ n/a
 
 ## Release Notes
 
-Thor brings a lot of new features in latest release(e.g. tree table, image/tag type table field, batch table actions), this plugin now supports snippets to these new features as well.
+Thor supports `radio` and `switch` fields in latest release, this update is to fit for these new features.
+
+### 0.4.0 (2020-09-07)
+
+1. add `Thor - Fields - Radio` support
+2. add `Thor - Fields - Switch` support
 
 ### 0.3.0 (2020-09-04)
 
