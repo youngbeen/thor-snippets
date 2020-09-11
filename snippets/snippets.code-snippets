@@ -6,47 +6,23 @@
       "{",
       "\tbizPageId: '$1', // 业务id。本地业务S开头，在线业务D开头",
       "\tname: '$2', // 业务名称",
-      "\tkeyParameter: 'id', // 键值字段，可选。默认'id'",
-      "\tsize: 'small', // 尺寸，可选，默认'small'",
       "\tlistPage: {",
       "\t\tlistTarget: '', // 业务列表的api，相对地址",
-      "\t\tlistApiParams: {",
-      "\t\t\tmethod: 'post' // api请求的自定义请求类型，可选。默认'post'请求",
-      "\t\t},",
       "\t\tfilters: [], // 筛选项配置，可选",
-      "\t\thasSearch: true, // 是否显示搜索操作，可选。默认true显示搜索",
       "\t\tfilterActions: [], // 筛选操作配置，可选",
       "\t\ttableFields: [], // 表格字段配置，必选",
-      "\t\thasIndex: true, // 表格是否显示索引列，可选，默认true显示索引列",
       "\t\ttableActions: [], // 列表操作项配置，可选。",
-      "\t\ttableActionWidth: '', // 列表操作列宽度，可选。默认自动计算。一般每个操作栏宽度预留80",
-      "\t\ttableActionSize: 'mini', // 列表操作列按钮尺寸，可选。默认'mini'",
-      "\t\tisTreeTable: false, // 列表是否以树结构展示。可选，默认false",
-      "\t\ttreeExpendMode: 'root', // 树列表默认展开方式。可选，默认'root'展示所有根节点。'root' - 展示根节点，'all' - 展示所有节点，'no' - 收起所有节点",
       "\t\tpager: { // 分页器配置，不配置则不显示分页器",
-      "\t\t\tpagerLayout: 'total, sizes, prev, pager, next, jumper', // 分页器功能配置，参考element-ui相关配置项值",
-      "\t\t\talign: 'left' // 对齐方式，可选。默认'left'居左对齐",
+      "\t\t\tpagerLayout: 'total, sizes, prev, pager, next, jumper' // 分页器功能配置，参考element-ui相关配置项值",
       "\t\t}",
       "\t},",
       "\teditPage: {",
       "\t\tdetailTarget: '', // 详情的目标api，必选。相对地址。支持以{}包裹的动态参数设置",
-      "\t\tdetailApiParams: {",
-      "\t\t\tmethod: 'post' // api请求的自定义请求类型，可选。默认'post'请求",
-      "\t\t},",
       "\t\tfields: [], // 字段配置，必选",
-      "\t\tlabelWidth: '100', // 字段显示名称宽度，可选。默认100px",
-      "\t\talign: 'right', // 对齐方式，可选。默认'right'居右对齐",
       "\t\tsubmit: {",
       "\t\t\taddTarget: '', // 添加提交操作的目标，可选。相对地址",
-      "\t\t\taddApiParams: {",
-      "\t\t\t\tmethod: 'post' // api请求的自定义请求类型，可选。默认'post'请求",
-      "\t\t\t},",
-      "\t\t\teditTarget: '', // 编辑提交操作的目标，可选。相对地址",
-      "\t\t\teditApiParams: {",
-      "\t\t\t\tmethod: 'post' // api请求的自定义请求类型，可选。默认'post'请求",
-      "\t\t\t}",
-      "\t\t},",
-      "\t\tcolumns: 2 // 页面的字段分几列展示，可选值1,2,3,4。默认2 - 分两列展示",
+      "\t\t\teditTarget: '' // 编辑提交操作的目标，可选。相对地址",
+      "\t\t}",
       "\t}",
       "}"
     ]
@@ -135,9 +111,20 @@
       "}"
     ]
   },
+  "Thor - Actions - Custom Action": {
+    "scope": "javascript,typescript",
+    "prefix": "thor-actions-custom",
+    "body": [
+      "{",
+      "\tlabel: '$1',",
+      "\ttype: 'custom',",
+      "\taction: (params, _this) => {$2}",
+      "}"
+    ]
+  },
   "Thor - Actions - TableActions With Limited Params": {
     "scope": "javascript,typescript",
-    "prefix": "thor-tableactions-limitparams",
+    "prefix": "thor-actions-limitparams",
     "body": [
       "{",
       "\tlabel: '$1',",
@@ -147,9 +134,9 @@
       "}"
     ]
   },
-  "Thor - Actions - TableActions With Confirm": {
+  "Thor - Actions - With Confirm": {
     "scope": "javascript,typescript",
-    "prefix": "thor-tableactions-confirm",
+    "prefix": "thor-actions-confirm",
     "body": [
       "{",
       "\tlabel: '$1',",

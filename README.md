@@ -27,7 +27,12 @@ n/a
 
 ## Release Notes
 
-Thor supports `radio` and `switch` fields in latest release, this update is to fit for these new features.
+Support latest `custom` action, and revises.
+
+### 0.4.1 (2020-09-11)
+
+1. revise `Thor - Page Object`, remove optional items
+2. add `Thor - Actions - Custom Action` support
 
 ### 0.4.0 (2020-09-07)
 
