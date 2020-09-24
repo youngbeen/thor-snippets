@@ -27,7 +27,12 @@ n/a
 
 ## Release Notes
 
-Support latest `custom` action, and revises.
+Support link type table field and label type editpage field.
+
+### 0.4.2 (2020-09-24)
+
+1. add `Thor - TableFields - Link` support
+2. add `Thor - Fields - Label` support
 
 ### 0.4.1 (2020-09-11)
 
