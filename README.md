@@ -13,6 +13,8 @@ Common used Thor snippets, includes:
 * Table Fields
 * Options(Select & Cascader)
 
+![preview](./assets/image/thor_snippets_preview.gif)
+
 ## Requirements
 
 n/a
